@@ -1,19 +1,3 @@
-// const express = require('express');
-// const app = express();
-// const port = 3000;
-
-// // Middleware to parse JSON
-// app.use(express.json());
-
-// // Root Route
-// app.get('/', (req, res) => {
-//   res.send('Food Delivery Backend with Order Management');
-// });
-
-// // Start the server
-// app.listen(port, () => {
-//   console.log(`Server running at http://localhost:${port}`);
-// });
 
 const express = require('express');
 const { v4: uuidv4 } = require('uuid');
@@ -140,3 +124,4 @@ cron.schedule('*/1 * * * *', () => { // Runs every minute
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`);
 });
+
